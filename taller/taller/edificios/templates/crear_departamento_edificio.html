@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h3>Crear departamento para el edificio: {{edificio}}</h3>
+<br>
+<form action="" method="post">
+  {% csrf_token %}
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3">
+        {{ formulario.nombre_propietario.errors }}
+        <label for="nombre_propietario" class="form-label">Nombre del propietario: </label>
+        {{ formulario.nombre_propietario }}
+      </div>
+      <div class="mb-3">
+        {{ formulario.costo.errors }}
+        <label for="costo" class="form-label">Costo del departamento: </label>
+        {{ formulario.costo }}
+      </div>
+      <div class="mb-3">
+        {{ formulario.num_cuartos.errors }}
+        <label for="num_cuartos" class="form-label">Número de cuartos: </label>
+        {{ formulario.num_cuartos }}
+      </div>
+      <p class="flex-center"><input class="btn btn-primary" type='submit' value='Agregar' /></p>
+    </div>
+</form>
+
+{% endblock %}

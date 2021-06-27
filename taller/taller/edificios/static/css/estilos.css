@@ -1,0 +1,57 @@
+header, footer {
+  background: #183231;
+  color: #FFF;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer p{
+  margin: 10px 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 0 10px;
+  margin: 0;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.opciones {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aux {
+  width: 100%;
+  height: 100%;
+}
+
+.boton {
+  width: 80%;
+}
